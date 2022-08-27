@@ -14,11 +14,11 @@ steps:
     title: Building Docker Image....
     type: build
     stage: package
-    image_name: my-app-image
+    image_name: senthil123/my-app-image
     working_directory: ./
     tag: v1.0.1
     dockerfile: Dockerfile
-    disable_push: false
+    disable_push: true
   MyUnitTests:
     title: Running Unit tests
     image: '${{MyAppDockerImage}}'

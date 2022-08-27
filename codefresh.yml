@@ -11,7 +11,7 @@ steps:
     revision: '${{CF_REVISION}}'
     stage: checkout
   MyAppDockerImage:
-    title: Building Docker Image
+    title: Building Docker Image....
     type: build
     stage: package
     image_name: my-app-image
